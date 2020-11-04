@@ -9,7 +9,7 @@ A fő file a [commands](https://github.com/OOC-Green/ModeratorBotV2/tree/main/co
 ***Felismerés:***
 
 [index.js](https://github.com/OOC-Green/ModeratorBotV2/blob/main/index.js):
-```    
+```js    
 1  const Discord = require("discord.js");
 ....
 41    //Help parancs
@@ -19,7 +19,7 @@ A fő file a [commands](https://github.com/OOC-Green/ModeratorBotV2/tree/main/co
 ```
 
 Ez azt jelenti, hogy a *Help* nevű modul-t keresi, ami a [commands/Help.js](https://github.com/OOC-Green/ModeratorBotV2/tree/main/commands/Help.js)-ben van:
-```
+```js
 1 module.exports = {
 2     name: "Help",
 ...
