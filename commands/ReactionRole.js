@@ -27,7 +27,7 @@ module.exports = {
             };
 
             //Fortnite Event
-            *****************
+            ******************
         });
         //rang elvétel
         bot.on("messageReactionRemove", async (reaction, user) =>{
@@ -52,7 +52,7 @@ module.exports = {
             };
 
             //Fortnite Event
-            *****************
+            ******************
         });
     }
 }
