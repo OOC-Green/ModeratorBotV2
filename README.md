@@ -2,6 +2,7 @@
 
 ***Használat:***
 Fő file: [index.js](https://github.com/OOC-Green/ModeratorBotV2/blob/main/index.js)
+
 A fő file a [commands](https://github.com/OOC-Green/ModeratorBotV2/tree/main/commands) mappát is használja
 
 ***Felismerés:***
