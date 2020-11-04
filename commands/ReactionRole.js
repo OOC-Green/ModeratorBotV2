@@ -27,9 +27,7 @@ module.exports = {
             };
 
             //Fortnite Event
-            if(reaction.emoji.name === "👾") {
-                await reaction.message.guild.members.cache.get(user.id).roles.add("773167633054564385")
-            };
+            *****************
         });
         //rang elvétel
         bot.on("messageReactionRemove", async (reaction, user) =>{
@@ -54,9 +52,7 @@ module.exports = {
             };
 
             //Fortnite Event
-            if(reaction.emoji.name === "👾") {
-                await reaction.message.guild.members.cache.get(user.id).roles.remove("773167633054564385")
-            };
+            *****************
         });
     }
 }
