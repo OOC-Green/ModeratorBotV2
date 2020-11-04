@@ -14,7 +14,7 @@ module.exports = {
                 .addField("Hamarosan event lesz. Amint lesz róla info, egy rangot lehet szerezni, amivel hozzá lehet férni a titkos event csatornához!", "Utoljára frissítve: 2020. 11. 03.")
 
                 let msgFNE = await message.channel.send(FNE);
-                //msgFNE.react("👾")
+                *****************
             };
         });
     }
