@@ -5,7 +5,8 @@ Fő file: [index.js] (https://github.com/OOC-Green/ModeratorBotV2/blob/main/inde
 A fő file a [commands] (https://github.com/OOC-Green/ModeratorBotV2/tree/main/commands) mappát is használja
 
 ***Felismerés:***
-[index.js] (https://github.com/OOC-Green/ModeratorBotV2/blob/main/index.js):
+[index.js] (https://github.com/OOC-Green/ModeratorBotV2/blob/main/index.js)
+:
 ```    
 1  const Discord = require("discord.js");
 ....
