@@ -1,11 +1,13 @@
 # ModeratorBotV2
 
 ***Használat:***
+
 Fő file: [index.js](https://github.com/OOC-Green/ModeratorBotV2/blob/main/index.js)
 
 A fő file a [commands](https://github.com/OOC-Green/ModeratorBotV2/tree/main/commands) mappát is használja
 
 ***Felismerés:***
+
 [index.js](https://github.com/OOC-Green/ModeratorBotV2/blob/main/index.js):
 ```    
 1  const Discord = require("discord.js");
@@ -15,6 +17,7 @@ A fő file a [commands](https://github.com/OOC-Green/ModeratorBotV2/tree/main/co
 43        bot.commands.get("Help").execute(message, Discord, invEmoji);
 44    };
 ```
+
 Ez azt jelenti, hogy a *Help* nevű modul-t keresi, ami a [commands/Help.js](https://github.com/OOC-Green/ModeratorBotV2/tree/main/commands/Help.js)-ben van:
 ```
 1 module.exports = {
