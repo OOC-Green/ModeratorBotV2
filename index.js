@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 const parancsok = require("./commands/parancsok.json").PARANCSOK;
+const kivetel =  ["m2/clear"]
 
 const invEmoji = "<:Lathatatlankarakter:764231280413376532>";      //invEmoji = láthatatlanEmoji
 
@@ -16,7 +17,7 @@ for(const file of parancsMappa) {
 
 bot.on("message", async message => {
     if(message.author.bot) return;
-    
+
     //Clear parancs
     if(message.content.startsWith("m2/clear")) {
         bot.commands.get("Clear").execute(message);
@@ -26,13 +27,19 @@ bot.on("message", async message => {
     const {channel} = message
     const szuksegesCsatorna = "segítség-kérés"
     
+    for(let i = 0; i < kivetel.length; i++) {
+        if (message.content.split(" ").includes(kivetel[i], 0)) {
+            return;
+            }
+        };
+    
     for(let i = 0; i < parancsok.length; i++) {
         if (message.content.split(" ").includes(parancsok[i], 0)) {
             if (szuksegesCsatorna !== channel.name) {
                 channel.name === szuksegesCsatorna;
     
                 message.delete();
-                message.reply(`Kérlek a <${"#742392355369517186"}> csatornára írjad!`).then(r =>r.delete(5000));
+                message.reply(`Kérlek a <${"#742392355369517186"}> csatornára írjad!`).then(r =>r.delete({timeout: 5000}));
                 return;
             }
         }
@@ -44,7 +51,8 @@ bot.on("message", async message => {
     };
         //nem
         if(message.content.startsWith("m2/nem")) {
-            message.channel.send("m2/clear");
+            message.delete();
+            message.delete();
         };
         
         //igen
@@ -106,6 +114,7 @@ bot.on("message", async message => {
     bot.commands.get("RRmsgJátékok").execute(bot, Discord, invEmoji);
 
     //Fortnite Event
+    bot.commands.get("Fn-DOW-Event").execute(bot, Discord);
 
 bot.commands.get("ReactionRole").execute(bot, Discord);
 
