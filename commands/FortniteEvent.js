@@ -1,5 +1,3 @@
-const { MessageFlags } = require("discord.js");
-
 module.exports = {
     name: "FortniteEvent",
     description: "A Fortnite letörlésének parancsa.",
@@ -10,11 +8,11 @@ module.exports = {
                 const FNE = new Discord.MessageEmbed()
                 .setTitle("Fortnite event")
                 .setColor("BLUE")
-                .setThumbnail(message.author.displayAvatarURL)
-                .addField("Hamarosan event lesz. Amint lesz róla info, egy rangot lehet szerezni, amivel hozzá lehet férni a titkos event csatornához!", "Utoljára frissítve: 2020. 11. 03.")
+                .setThumbnail(message.author.displayAvatarURL())
+                .addField("Megvannak az infók! (Spoiler mentes!) Ahhoz, hogy megtudd, és szeretnél részt venni a közös event nézésen, reagálj egy 👾 emojival erre az üzenetre, és hozzáférést kapsz a titkos #𝗘𝗫𝗖𝗟𝗨𝗦𝗜𝗩𝗘║ᴇᴠᴇɴᴛ csatornához és az Event nézés 👀 hangcsatornához!", "Utoljára frissítve: 2020. 11. 19.")
 
                 let msgFNE = await message.channel.send(FNE);
-                ****************
+                msgFNE.react("👾")
             };
         });
     }
